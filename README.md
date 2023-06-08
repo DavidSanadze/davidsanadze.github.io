@@ -1,2 +1,0 @@
-# davidsanadze.github.io
-OptimoData
