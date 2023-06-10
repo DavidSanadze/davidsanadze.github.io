@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   
   <meta charset='utf-8'>
@@ -18,28 +17,6 @@
   <script nomodule="" src="https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js"></script>
   <script nomodule="" src="https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js"></script>
   <script nomodule="" src="https://polyfill.io/v3/polyfill.min.js?features=fetch"></script>
-  
-  <!-- Translations -->
-  <a href="#" onclick="setLanguage('en')">English</a> 
-  <a href="#" onclick="setLanguage('es')">Deutsch</a>
-
-  <div id="div1"></div>
-
-  <script>
-  var language; 
-  function getLanguage() {
-  (localStorage.getItem('language') == null) ? setLanguage('en') : false;
-  $.ajax({ 
-  url:  '/language/' +  localStorage.getItem('language') + '.json', 
-  dataType: 'json', async: false, dataType: 'json', 
-  success: function (lang) { language = lang } });
-  }
-
-  function setLanguage(lang) {
-  localStorage.setItem('language', lang);
-  }
-  </script>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
 
